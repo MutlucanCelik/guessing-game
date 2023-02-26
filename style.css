@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #201f20;
+  color: #fff;
+  font-family: "Press Start 2P", cursive;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  padding: 1rem 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__game-name {
+  font-size: 1.2rem;
+  color: #fff;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.header__high-score-conteiner {
+  font-size: 0.45rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.guess-conteiner {
+  width: 100%;
+  height: 16rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.guess-conteiner__cards {
+  width: 12rem;
+  height: 16rem;
+  color: #fff;
+  font-size: 5rem;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+
+  position: relative;
+}
+.guess-conteiner__card-front {
+  width: 12rem;
+  height: 16rem;
+  background-color: #201f20;
+  border-radius: 3px;
+  z-index: 1;
+  backface-visibility: hidden;
+  border: 3px solid #fff;
+  border-radius: 3px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.guess-conteiner__card-back {
+  width: 12rem;
+  height: 16rem;
+  background-color: #49be25;
+  border: 3px solid #fff;
+  border-radius: 3px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  height: 18rem;
+
+  display: flex;
+}
+.content__left {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content__input {
+  display: block;
+  font-family: inherit;
+  width: 15rem;
+  height: 6rem;
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+  background-color: #201f20;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  outline: 0;
+}
+.btn {
+  width: 7rem;
+  height: 2.5rem;
+  font-family: inherit;
+  font-size: 0.7rem;
+  color: #fff;
+  background-color: #201f20;
+  margin-top: 5px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.content__right {
+  width: 50%;
+  height: 100%;
+  font-size: 0.8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.content__puan {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.content__info {
+  font-size: 0.9rem;
+  line-height: 2rem;
+}
+.content__info-2 {
+  font-size: 0.9rem;
+  line-height: 2rem;
+}

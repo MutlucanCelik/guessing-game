@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎮 Tahmin Oyunu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__game-name-conteiner">
+        <h1 class="header__game-name">Numaramı Tahmin Et !</h1>
+      </div>
+      <div class="header__high-score-conteiner">
+        <h2>🏆 En Yüksek Skor : <span class="highscore">0</span></h2>
+      </div>
+    </header>
+
+    <section class="guess-conteiner">
+      <div class="guess-conteiner__cards">
+        <div class="guess-conteiner__card-front">
+          <span class="guess-conteiner__card-front-content">?</span>
+        </div>
+        <div class="guess-conteiner__card-back">
+          <span class="guess-conteiner__card-back-content"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="content__left">
+        <input type="nuber" class="content__input" value="0" />
+        <div class="content__btn-conteiner">
+          <button class="btn content__check">Tahmin</button>
+          <button class="btn content__reset">Sıfırla</button>
+        </div>
+      </div>
+      <div class="content__right">
+        <p class="content__info">
+          😎 1 ile 20 arasında sayı tuttum tahmin et bakalım.
+        </p>
+        <p class="content__info-2">
+          ❗ Her yanlış tahminde 10 puan kaybedeceksin dikkatli ol !
+        </p>
+        <p class="content__puan">💯 Puan : <span class="puan"></span></p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
