@@ -6,6 +6,7 @@
 }
 
 body {
+  padding: 1rem 1rem;
   background-color: #201f20;
   color: #fff;
   font-family: "Press Start 2P", cursive;
@@ -19,7 +20,10 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 .header__game-name {
+  width: 31rem;
+
   font-size: 1.2rem;
   color: #fff;
   letter-spacing: 2px;
@@ -28,6 +32,8 @@ header {
 }
 
 .header__high-score-conteiner {
+  width: 20rem;
+
   font-size: 0.45rem;
   padding: 1rem 2rem;
   border-radius: 5px;
@@ -144,4 +150,81 @@ header {
 .content__info-2 {
   font-size: 0.9rem;
   line-height: 2rem;
+}
+@media only screen and (min-width: 1825px) {
+  html {
+    font-size: 21px;
+  }
+  .guess-conteiner {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header__game-name {
+    font-size: 1rem;
+  }
+  .guess-conteiner {
+    margin-top: 5rem;
+  }
+
+  .header__high-score-conteiner {
+    width: 25rem;
+    padding: 1rem 1rem;
+    font-size: 0.5rem;
+    text-align: center;
+  }
+
+  .content {
+    margin-top: 2rem;
+  }
+  .content__info {
+    width: 90%;
+  }
+  .content__info-2 {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 1rem 1rem;
+  }
+  .guess-conteiner {
+    margin-top: 7rem;
+  }
+  .content__info {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .content__info-2 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+  .header__game-name {
+    width: 20rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  .header__high-score-conteiner {
+    width: 12rem;
+    padding: 1rem 1rem;
+    font-size: 0.5rem;
+  }
+
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+  }
+  .content__right {
+    order: -1;
+    width: 80%;
+  }
 }
